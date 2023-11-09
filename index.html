@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="icon" href="./Image/Logo.svg" type="image/x-icon">
+    <link rel="icon" href="./Image/Logo.svg" type="image/x-icon"><!-- favicon -->
 
 </head>
 
-<body class="text-white bg-typo container-fluid">
+<body class="text-white bg-typo container-fluid"><!-- empeche le scroll horizontale -->
     <div class="row">
         <div class="col-md-1 d-none d-md-inline">
+            <!-- met en place des colonnes qui seront superposées au format mobile -->
             <img class="ms-3" src="./Image/Line 10 (Stroke).png" alt="barre verticale">
             <br>
             <div class="ms-1">
@@ -23,14 +24,15 @@
                 <br>
                 <a href="#" target="blank"><img src="./Image/Email.svg" alt="mail"></a>
                 <br>
-                <a href="javascript:;" onclick="iban()"><img src="./Image/Card.png" alt="cb"></a>
+                <a href="javascript:;" onclick="iban()"><img src="./Image/Card.png"
+                        alt="cb"></a><!-- fonction js qui fait pop mon iban si vous voulez me soutenir en me fesant un virement -->
             </div>
         </div>
         <div class="col">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid ">
                     <a class="navbar-brand text-white ms-md-5 fw-medium"
-                        href="https://gaudrymatthieu.github.io/portfolio/">
+                        href="https://gaudrymatthieu.github.io/portfolio/"><!-- retourne sur le github -->
                         <img src="./Image/Logo.svg" alt="logo carré">
                         Matthieu</a>
 
@@ -54,7 +56,7 @@
                                     class="color-special-char ">#</span>Works</a>
                             <a class="nav-link active ms-3 pe-2 me-3 text-light text-opacity-75"
                                 href="./about.html"><span class="color-special-char">#</span>About-me</a>
-                            <div class="d-flex">
+                            <div class="d-flex"> <!-- navbar au format mobile 3 nouveaux éléments -->
                                 <a class="nav-link active text-white ms-3 pe-2 me-3 d-md-none"
                                     href="https://www.linkedin.com/in/matthieu-gaudry/" target="blank"><img class="ms-1"
                                         src="./Image/Vector.png" alt="linkedin icon"></a>
@@ -85,7 +87,8 @@
             <h5 class="text-light text-opacity-75">I craft responsive websites. Fold phone included</h5>
         </div>
         <div class="col-md">
-            <img src="./Image/Image.png" class="d-none d-md-block" alt="picture of a man">
+            <img src="./Image/Image.png" class="d-none d-md-block"
+                alt="picture of a man"><!-- permet de faire disparaitre l'image au format mobile -->
         </div>
     </div>
 
@@ -123,7 +126,7 @@
     </div>
 
     <div class="d-flex flex-wrap">
-        <div class="card ms-md-5 mt-5 mb-5" style="width: 18rem;">
+        <div class="card ms-md-5 mt-5 mb-5" style="width: 18rem;"><!-- cartes pour les projects les plus complexes -->
             <img src="./Image/pot-fleur.jpg" class="card-img-top " alt="pot de fleur">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item bg-typo text-light text-opacity-75">C++</li>
@@ -198,7 +201,7 @@
             <img src="./Image/square.svg" class="d-none d-md-block" alt="square">
         </div>
 
-        <div class="col-md-2 ">
+        <div class="col-md-2 "><!-- cartes pour les projects moins complexes -->
             <div class="card mt-5 ">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item bg-typo text-white fw-medium">Languages</li>
@@ -234,7 +237,7 @@
 
     <div class="row">
 
-        <div class="col-md-1">
+        <div class="col-md-1"><!-- éléments de déco qui disparaisse au format mobile -->
             <!-- none -->
         </div>
 
@@ -253,8 +256,6 @@
         <div class="col-md-3">
             <!-- none -->
         </div>
-
-        <!-- mt-lg-0 mt-5 pour le responsive des tools -->
 
         <div class="col-md-2">
             <div class="card mt-lg-0 mt-5">
@@ -314,6 +315,7 @@
             </p>
 
             <a class="btn btn-outline-light border-button " href="./about.html" role="button">Read more -></a>
+            <!-- bouton qui renvoie vers la page about -->
         </div>
 
         <div class="col-md-5">
@@ -326,6 +328,7 @@
     </div>
 
     <div class="position-fixed bottom-0 end-0 m-5 p-3 d-none d-md-block">
+        <!-- bouton pour remonter la page dynamiquement -->
         <button id="scrollToTopButton" onclick="scrollToTop()" class="btn btn-outline-light border-button">Up</button>
     </div>
 
