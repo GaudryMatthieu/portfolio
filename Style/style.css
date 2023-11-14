@@ -12,3 +12,13 @@
 .border-button {/* bordure des boutons */
     border-color: #C778DD;
 }
+
+
+.accordion-button::after {
+    content: '\25BC'; /* Unicode pour la flèche vers le bas (▼) */
+    color: #C778DD; /* Changez cette couleur en celle de votre choix */  
+}
+
+.accordion-button.collapsed::after {
+    content: '\25B6'; /* Unicode pour la flèche vers la droite (▶) lorsque l'accordéon est fermé */
+}
