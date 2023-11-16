@@ -22,3 +22,9 @@
 .accordion-button.collapsed::after {
     content: '\25B6'; /* Unicode pour la flèche vers la droite (▶) lorsque l'accordéon est fermé */
 }
+
+
+.accordion-button:focus {
+    box-shadow: none;
+ }
+ 
